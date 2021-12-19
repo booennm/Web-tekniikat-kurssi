@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/latest_photos?api_key=AEPvIWsTwogkG1DQDfzWSu5voSsXRrSJQwt3gDcn"
+let url = "https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/latest_photos?&api_key=AEPvIWsTwogkG1DQDfzWSu5voSsXRrSJQwt3gDcn"
 
 request.open("GET", url, true);
 request.send();
