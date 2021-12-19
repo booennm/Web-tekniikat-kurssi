@@ -34,7 +34,9 @@ body {
 button {
     background-color: #8469FF;
     border: none;
+    border-radius: 2px;
     color: white;
+
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 2em;
@@ -47,19 +49,67 @@ button {
     text-shadow: 4px 4px 0 black;
 }
 
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 #perseverance {
     display: inline-block;
     margin-left: 3em;
 }
 
+span {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
 h1 {
+    color: #8469FF;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+.selection h1 {
+    color: white;
     font-size: 4em;
+    margin-bottom: 0.8em;
 }
 
 h2 {
     margin-bottom: 0;
+    margin-top: 0;
     font-weight: lighter;
+}
+
+#img {
+    display: flex;
+    align-items: center;
+}
+
+i {
+    display: inline;
+    text-align: center;
+}
+
+i>span {
+    display: block;
+    font-family: "Teko", sans-serif;
+    font-size: 0.5em;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+img {
+    height: 60vh;
+    width: 90vh;
+    display: inline;
+    object-fit: contain;
+}
+
+p {
+    font-size: 0.9em;
 }
 
 footer {
@@ -72,5 +122,7 @@ footer {
 footer p {
     color: white;
     display: inline;
-    margin-left: 15vw;
+    margin-left: 13vw;
+    letter-spacing: 5px;
+    word-spacing: 3px;
 }
