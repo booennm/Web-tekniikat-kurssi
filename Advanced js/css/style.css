@@ -2,13 +2,14 @@ html {
     height: 100%;
 
     font-family: "Teko", sans-serif;
-    font-size: 1.5em;
+    font-size: 2vw;
     letter-spacing: 3px;
 }
 
 body {
     height: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
 
@@ -23,6 +24,7 @@ body {
 
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
 }
 
 .header {
@@ -59,9 +61,14 @@ button:hover {
     margin-left: 3em;
 }
 
-span {
+#back {
     margin-top: 1em;
     margin-left: 1em;
+}
+
+#back:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 h1 {
@@ -80,6 +87,12 @@ h2 {
     margin-bottom: 0;
     margin-top: 0;
     font-weight: lighter;
+}
+
+#loading {
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
 }
 
 #img {
@@ -101,6 +114,10 @@ i>span {
     margin-left: 0;
 }
 
+i:hover {
+    cursor: pointer;
+}
+
 img {
     height: 60vh;
     width: 90vh;
@@ -113,16 +130,61 @@ p {
 }
 
 footer {
+    min-height: fit-content;
+    font-size: 2vh;
     margin-top: auto;
-    padding: 1em;
+    padding-left: 1em;
     background-color: black;
     color: #A6A6A6;
 }
 
-footer p {
+footer p:first-child {
+    font-size: 3vh;
     color: white;
-    display: inline;
-    margin-left: 13vw;
+    display: block;
     letter-spacing: 5px;
     word-spacing: 3px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    img {
+        width: 70vw;
+        padding-top: 0;
+    }
+    
+    #img {
+        display: block;
+        width: 80vw;
+    }
+
+    i>span {
+        font-size: 0.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 3vw;
+    }
+
+    button {
+        display: block;
+    }
+
+    #perseverance {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer p:first-child {
+        font-size: 2vh;
+    }
 }

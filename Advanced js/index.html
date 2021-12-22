@@ -8,24 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!--<script src="js/code.js" defer></script>-->
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d1a7cd4502.js" crossorigin="anonymous"></script>
+    <script src="js/code.js" defer></script>
+    <title>Rover images</title>
 </head>
 <body>
     <div id="content">
-        <div class="header selection">
+        <div id="header" class="header selection">
             <h2>See what's going on in Mars</h2>
             <h1>Pick a rover</h1>
         </div>
         <div class="buttons">
-            <button id="curiosity">CURIOSITY</button>
-            <button id="perseverance">PERSEVERANCE</button>
+            <button id="curiosity" onclick="viewImages('curiosity')">CURIOSITY</button>
+            <button id="perseverance" onclick="viewImages('perseverance')">PERSEVERANCE</button>
         </div>
     </div>
 
     <footer>
-        <span>© Böök Enna-Liina</span>
         <p>This site shows you the most recent images taken by NASA's active rovers on Mars</p>
+        <p>© Böök Enna-Liina</p>
     </footer>
 </body>
 </html>
